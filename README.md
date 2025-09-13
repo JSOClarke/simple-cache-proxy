@@ -67,3 +67,5 @@ node your_script_name.js --clear-cache
 2.  On a **GET request**, the server first checks if the requested URL exists in the cache.
 3.  **Cache Hit:** If the URL is found, it retrieves the cached response (headers and body) and sends it back to the client with an `X-Cache: HIT` header.
 4.  **Cache Miss:** If the URL is not in the cache, the server makes a new request to the **origin server**, forwards the response to the client with an `X-Cache: MISS` header, and then saves the response to the `cache.json` file for future use.
+
+Project Challenge: https://roadmap.sh/projects/caching-server
